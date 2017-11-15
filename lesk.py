@@ -1,6 +1,5 @@
 import sys
-import nltk
-nltk.download('wordnet')
+# nltk.download('wordnet')
 from nltk.corpus import wordnet
 
 # Read the Inputs: the input sentence and the word
@@ -53,10 +52,12 @@ def lesk(input, word):
                 maxOverlap = overlap
                 bestSense = synset.definition()
 
+                sense = synset.name()
                 print('Best Sense changed: ', bestSense)
             print('\n')
 
     print('\n----------------------------------------------- OUTPUT -----------------------------------------------\n')
+    print('Sense #: ', sense)
     print('Best Sense: ', bestSense)
     print('Max Overlap: ', maxOverlap)
 
