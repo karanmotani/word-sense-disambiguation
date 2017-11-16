@@ -4,11 +4,11 @@ from nltk.corpus import wordnet
 
 # Read the Inputs: the input sentence and the word
 def readInput():
-    # input = sys.argv[1]
-    input = 'The bank can guarantee deposits will eventually cover future tuition costs ' \
-            'because it invests in adjustable-rate mortgage securities.'
-    # word = sys.argv[2]
-    word = 'bank'
+    input = sys.argv[1]
+    # input = 'The bank can guarantee deposits will eventually cover future tuition costs ' \
+    #         'because it invests in adjustable-rate mortgage securities.'
+    word = sys.argv[2]
+    # word = 'bank'
 
     return input, word
 
